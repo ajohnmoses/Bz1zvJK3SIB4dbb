@@ -4,8 +4,15 @@
 
 
 @layer base{
-    #lhead{
-        font-family: "league spartan";
-    }
+#hero{
+    background: url(Assets/mdbg.png);
+}
+.nav-links {
+    transition: top 0.3s ease;
+}
+.herohead{
+    font-family: "Jost";
+}
+
 }
 

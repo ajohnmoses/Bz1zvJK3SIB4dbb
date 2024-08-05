@@ -1,13 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl Tech</title>
-    <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <h1 class="text-blue-500">hhello</h1>
+
+<body class="bg-[#fff6ed]">
+    <header>
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div class="flex space-x-3 items-center h-[80px]">
+                <div>
+                    <img src="Assets/Logo.png" alt="" class="size-6">
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-[15px] font-medium">The Pearl Tech Solutions</h3>
+                    <p class="text-[8px] text-slate-400">initiate. innovate. implement</p>
+                </div>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:bg-transparent bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8 font-[k2d]">
+                    <li>
+                        <a class="hover:text-amber-500 font-medium text-amber-600" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-amber-500" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-amber-500" href="#">Services</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-amber-500" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+    </header>
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

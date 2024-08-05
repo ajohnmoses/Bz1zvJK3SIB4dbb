@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateY(-13px)' },
+          '50%': { transform: 'translateY(13PX)' },
+        }
+      }
+    },
   },
   plugins: [],
 }

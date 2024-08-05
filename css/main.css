@@ -730,18 +730,20 @@ video {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes wiggle {
-  0%, 100% {
-    transform: translateY(-13px);
+@keyframes tintro {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
   }
 
-  50% {
-    transform: translateY(13PX);
+  100% {
+    opacity: 1;
+    transform: translateY(0PX);
   }
 }
 
-.animate-\[wiggle_1s_ease-in-out_infinite\] {
-  animation: wiggle 1s ease-in-out infinite;
+.animate-\[tintro_1s_ease-in-out_1\] {
+  animation: tintro 1s ease-in-out 1;
 }
 
 @keyframes wiggle {
@@ -756,6 +758,30 @@ video {
 
 .animate-\[wiggle_5s_ease-in-out_infinite\] {
   animation: wiggle 5s ease-in-out infinite;
+}
+
+.animate-\[pintro_1s_ease-in-out_1\] {
+  animation: pintro 1s ease-in-out 1;
+}
+
+.animate-\[bintro_1s_ease-in-out_1\] {
+  animation: bintro 1s ease-in-out 1;
+}
+
+@keyframes tintro {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0PX);
+  }
+}
+
+.animate-\[tintro_1s_ease-in-out_1_1\] {
+  animation: tintro 1s ease-in-out 1 1;
 }
 
 .cursor-pointer {
@@ -1033,6 +1059,10 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.delay-100 {
+  transition-delay: 100ms;
 }
 
 .duration-500 {

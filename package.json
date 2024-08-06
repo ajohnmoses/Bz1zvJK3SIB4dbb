@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
-    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "start":"vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "vite": "^5.3.5"
   }
 }

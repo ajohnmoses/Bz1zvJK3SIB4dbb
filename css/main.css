@@ -611,18 +611,6 @@ html,body{
   top: -100%;
 }
 
-.left-24 {
-  left: 6rem;
-}
-
-.left-\[25px\] {
-  left: 25px;
-}
-
-.left-\[55px\] {
-  left: 55px;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -686,9 +674,9 @@ html,body{
   aspect-ratio: 577/310;
 }
 
-.size-\[430px\] {
-  width: 430px;
-  height: 430px;
+.size-\[420px\] {
+  width: 420px;
+  height: 420px;
 }
 
 .h-0\.5 {
@@ -703,6 +691,10 @@ html,body{
   height: 100dvh;
 }
 
+.h-\[100bvh\] {
+  height: 100bvh;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
@@ -713,10 +705,6 @@ html,body{
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
 }
 
 .w-\[220px\] {
@@ -840,10 +828,6 @@ html,body{
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -1137,14 +1121,6 @@ html,body{
     right: 2.5rem;
   }
 
-  .md\:top-\[-69px\] {
-    top: -69px;
-  }
-
-  .md\:top-\[-59px\] {
-    top: -59px;
-  }
-
   .md\:top-\[-39px\] {
     top: -39px;
   }
@@ -1220,6 +1196,13 @@ html,body{
 
   .md\:text-\[50px\] {
     font-size: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:size-1 {
+    width: 0.25rem;
+    height: 0.25rem;
   }
 }
 

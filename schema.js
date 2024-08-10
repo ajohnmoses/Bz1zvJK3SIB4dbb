@@ -4,7 +4,7 @@ const schemaData = {
     "@type": "Organization",
     "name": "Pearl Tech Solutions",  // No change needed here
     "url": "https://www.pearltechsolutions.in",  // Change to your actual website URL
-    "logo": "https://www.pearltechsolutions.in/logo.png",  // Change to your actual logo URL
+    "logo": "https://pearltechsolutions.in/Assets/Logo.png",  // Change to your actual logo URL
     "sameAs": [
       "https://www.facebook.com/yourpage",  // Change to your actual Facebook page URL
       "https://twitter.com/yourprofile",    // Optionally add or update other social profiles

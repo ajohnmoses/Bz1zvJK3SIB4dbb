@@ -7,9 +7,6 @@
 #hero{
     background: url(Assets/mdbg.png);
 }
-.nav-links {
-    transition: top 0.3s ease;
-}
 .herohead{
     font-family: "Jost";
 }
@@ -18,5 +15,26 @@ html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+/* Ensure the menu is hidden by default */
+.nav-links {
+    position: absolute;
+    top: -100%; /* Hide the menu off-screen by default */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+/* Show the menu when active */
+.nav-active .nav-links {
+    top: 60px; /* Adjust this value based on whether the banner is present or not */
+}
+
+/* Optional: Handle the case where the banner is dismissed */
+.banner-dismissed .nav-active .nav-links {
+    top: 60px;
+}
+
 }
 

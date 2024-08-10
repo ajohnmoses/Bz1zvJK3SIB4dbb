@@ -16,9 +16,31 @@
 </head>
 
 <body class="bg-[#fff6ed] scroll-smooth">
-    <section id="banner" class="h-[100dvh]" style="background-image: url(Assets/mdbg.png); background-size: cover; background-repeat: no-repeat; background-position:center;">
+  <!-- Back to top button -->
+<button
+type="button"
+data-twe-ripple-init
+data-twe-ripple-color="light"
+class="!fixed bottom-5 end-5 hidden rounded-full bg-red-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg z-[1003]"
+id="btn-back-to-top">
+<span class="[&>svg]:w-4">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="3"
+    stroke="currentColor">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+  </svg>
+</span>
+</button>
+
+    <section id="landing" class="h-[100dvh]" style="background-image: url(Assets/mdbg.png); background-size: cover; background-repeat: no-repeat; background-position:center;">
         <!--banner-->
-        <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div id="notification" class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
             <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
               <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
             </div>
@@ -32,7 +54,7 @@
               <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div class="flex flex-1 justify-end">
-              <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+              <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]" onclick="dismissNotification()">
                 <span class="sr-only">Dismiss</span>
                 <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
@@ -55,7 +77,7 @@
                     </defs>
                     </svg>
                 <div
-                    class="nav-links duration-500 md:static absolute md:bg-transparent bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    class="nav-links duration-500 md:static absolute md:bg-transparent bg-white md:min-h-fit min-h-[60vh] left-0 md:w-auto  w-full flex items-center px-5 z-[1000]">
                     <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8 font-[k2d]">
                         <li>
                             <a class="hover:text-amber-500 font-medium text-amber-600" href="#">Home</a>
@@ -67,18 +89,19 @@
                             <a class="hover:text-amber-500" href="#wwd">Services</a>
                         </li>
                         <li>
-                            <a class="hover:text-amber-500" href="#">Contact</a>
+                            <a class="hover:text-amber-500" href="#git">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <ion-icon id="menu-icon" onclick="onToggleMenu(this)" name="menu" class="md:text-3xl text-xl  cursor-pointer md:hidden"></ion-icon>
+                <ion-icon id="menu-icon" onclick="onToggleMenu(this)" name="menu" class="z-[1001] md:text-3xl text-xl cursor-pointer md:hidden"></ion-icon>
+
             </nav>
         </header>
         <!--landing-->
-        <div>
+        <div class="max-md:mt-[100px]">
         <div class="relative flex max-md:flex-col mt-[12%] justify-between xl:">
             <div class="left flex flex-col md:pl-14 z-20">
-                <h1 class="animate-[tintro_1s_ease-in-out_1] opacity-1 ml-5 mb-1 herohead w-[300px] md:w-[450px] leading-tight  text-[30px] md:text-[50px] font-bold leading-[47px]">Your Victory is our <span class="text-transparent bg- bg-gradient-to-r from-amber-600 to-orange-700 bg-clip-text">Success</span></h1>
+                <h1 class="animate-[tintro_1s_ease-in-out_1] opacity-1 ml-5 herohead w-[300px] md:w-[450px] leading-tight  text-[30px] md:text-[50px] font-bold leading-[47px]">Your Victory is our <span class="text-transparent bg- bg-gradient-to-r from-amber-600 to-orange-700 bg-clip-text">Success</span></h1>
                 <p class="font-[inter] animate-[tintro_1s_ease-in-out_1] opacity-1 w-[220px] text-[13px] ml-5 mb-5 md:w-[300px] md:text-[16px] font-medium text-slate-800">Discovering Innovations with Digital intelligence and creativity"</p>
                 <div class="animate-[tintro_1s_ease-in-out_1] opacity-1 flex space-x-3 ml-5"><button class="md:py-3 md:px-10 bg-gradient-to-r from-orange-700 to-orange-500 text-sm md:rounded-2xl font-medium text-white px-6 py-2.5 rounded-xl hover:from-orange-500 hover:to-orange-700 shadow-lg">Explore</button><button class="font-medium bg-white ring-1 ring-slate-200 shadow-lg md:rounded-2xl md:py-3 md:px-7 px-4 py-1 rounded-xl text-sm">Contact Us</button></div>
             </div>
@@ -655,7 +678,7 @@
 <!--team-->
 <section>
   <!-- ====== Team Section Start -->
-<section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 dark:bg-dark">
+<section class="font-[inter] pt-20 pb-10 lg:pt-[120px] lg:pb-20 dark:bg-dark">
   <div class="container mx-auto">
      <div class="-mx-4 flex flex-wrap">
         <div class="w-full px-4">
@@ -664,7 +687,7 @@
                 Passionate. Proactive. Productive.
               </span>
               <h2
-                 class="text-dark dark:text-black mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]"
+                 class="font-[jost] text-dark dark:text-black mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]"
                  >
                  Who We Are!
               </h2>
@@ -760,9 +783,9 @@
 
 
 
+<!--getintouch-->
 
-
-<section>
+<section id="git">
   <section class="font-[inter] flex justify-center items-center">
     <div class="flex justify-between p-10 max-md:flex-col max-md:gap-5">
       <div class="flex flex-col space-y-4 max-md:items-center">
@@ -784,14 +807,14 @@
   
       </div>
       <!--right side of get in touch-->
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form method="POST" action="https://api.web3forms.com/submit">
         <div class="font-[inter] px-10 py-8 bg-white rounded-3xl shadow-xl max-md:px-10">
           <input type="hidden" name="access_key" value="d2976c08-fc08-4e2b-8697-60b2206e965d">
           <h3 class="font-bold text-3xl max-md:text-[27px] max-md:text-center">Get in Touch</h3>
           <div class="flex gap-4 mt-5 max-md:flex-col">
             
-            <input type="text" placeholder="First Name" name="firstname" class="outline-none px-3 py-3 ring-1 ring-slate-300 rounded-lg text-[12px]">
-            <input type="text" placeholder="Last Name" name="lastname" class="outline-none px-3 py-3 ring-1 ring-slate-300 rounded-lg text-[12px]">
+            <input type="text" placeholder="First Name" name="firstname" class="outline-none px-3 py-3 ring-1 ring-slate-300 rounded-lg text-[12px]" required>
+            <input type="text" placeholder="Last Name" name="lastname" class="outline-none px-3 py-3 ring-1 ring-slate-300 rounded-lg text-[12px]" required>
           </div>
           <div class="mt-5 flex items-center ring-1 ring-slate-300 px-5 rounded-xl">
             <div class="border-r-slate-400 border-2 pr-3 border-b-0 border-t-0 border-l-0 "><svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
@@ -802,7 +825,7 @@
               </g>
               </svg></div>
             
-            <input type="text" placeholder="Your Email ID" name="emailid" class="outline-none px-3 py-3 rounded-lg text-[12px] w-full ml-2">
+            <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Your Email ID" name="emailid" class="outline-none px-3 py-3 rounded-lg text-[12px] w-full ml-2">
           </div>
 
           <div class="mt-5 flex items-center ring-1 ring-slate-300 px-5 rounded-xl">
@@ -812,11 +835,12 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z" fill="#1C274C"/>
               </svg></div>
             
-            <input type="text" placeholder="Mobile Number" name="phno" class="outline-none px-3 py-3 rounded-lg text-[12px] ml-2 w-full">
+            <input type="text" pattern=".{8,}" title="10 or more numbers" placeholder="Mobile Number" name="phno" class="outline-none px-3 py-3 rounded-lg text-[12px] ml-2 w-full" required>
           </div>
           <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="How can we help..." class="outline-none mt-5 w-full rounded-md border ring-1 ring-slate-300 py-4 pl-5 pr-4 shadow-md text-[12px] sm:mb-0"></textarea>
           <button type="submit" class="mt-5 text-sm w-full bg-gradient-to-r from-amber-700 to-orange-700 text-white py-3 rounded-xl">Submit Request</button>
         </div>
+        
       </form>
     </div>
   </section>
@@ -924,24 +948,7 @@
             </a>
           </li>
 
-          <li>
-            <a
-              href="#"
-              rel="noreferrer"
-              target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
-            >
-              <span class="sr-only">Dribbble</span>
-
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </li>
+        
         </ul>
       </div>
 

@@ -863,6 +863,10 @@ html,body{
   margin-top: 12%;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1885,6 +1889,10 @@ html,body{
   line-height: 1rem;
 }
 
+.text-\[3px\] {
+  font-size: 3px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2440,6 +2448,26 @@ html,body{
   .max-md\:leading-3 {
     line-height: .75rem;
   }
+
+  .max-md\:leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .max-md\:leading-4 {
+    line-height: 1rem;
+  }
+
+  .max-md\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .max-md\:leading-5 {
+    line-height: 1.25rem;
+  }
+
+  .max-md\:text-\[\] {
+    color: ;
+  }
 }
 
 @media (min-width: 640px) {
@@ -2583,6 +2611,14 @@ html,body{
 
   .md\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:flex {

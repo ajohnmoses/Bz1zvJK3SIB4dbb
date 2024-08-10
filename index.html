@@ -9,6 +9,7 @@
     <meta property="og:title" content="Pearl Tech Solutions">
     <meta property="og:description" content="Top-notch UI/UX design, web development, and multimedia services.">
     <meta property="og:image" content="">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="schema.js"></script>
 
 
@@ -18,9 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="Assets/Logo.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="logo" href="Assets/Logo.png">
     <title>Pearl Tech Solutions</title>
 </head>
@@ -103,17 +105,20 @@ id="btn-back-to-top">
                         </li>
                     </ul>
                 </div>
-                <ion-icon id="menu-icon" onclick="onToggleMenu(this)" name="menu" class="z-[1001] md:text-3xl text-xl cursor-pointer md:hidden"></ion-icon>
+                <svg id="menu-icon" onclick="onToggleMenu(this)" name="menu" class="z-[1001] md:text-3xl text-xl cursor-pointer md:hidden size-5"  xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"/>
+                  </svg>
+                
 
             </nav>
         </header>
         <!--landing-->
         <div class="max-md:mt-[100px]">
         <div class="relative flex max-md:flex-col mt-[12%] justify-between xl:">
-            <div class="left flex flex-col md:pl-14 z-20">
-                <h1 class="animate-[tintro_1s_ease-in-out_1] opacity-1 ml-5 herohead w-[300px] md:w-[450px] leading-tight  text-[30px] md:text-[50px] font-bold leading-[47px]">Your Victory is our <span class="text-transparent bg- bg-gradient-to-r from-amber-600 to-orange-700 bg-clip-text">Success</span></h1>
-                <h2 class="font-[inter] animate-[tintro_1s_ease-in-out_1] opacity-1 w-[220px] text-[13px] ml-5 mb-5 md:w-[300px] md:text-[16px] font-medium text-slate-800">Discovering Innovations with Digital intelligence and creativity"</>
-                <div class="animate-[tintro_1s_ease-in-out_1] opacity-1 flex space-x-3 mt-5"><button class="md:py-3 md:px-10 bg-gradient-to-r from-orange-700 to-orange-500 text-sm md:rounded-2xl font-medium text-white px-6 py-2.5 rounded-xl hover:from-orange-500 hover:to-orange-700 shadow-lg">Explore</button><button class="font-medium bg-white ring-1 ring-slate-200 shadow-lg md:rounded-2xl md:py-3 md:px-7 px-4 py-1 rounded-xl text-sm">Contact Us</button></div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450" class="left flex flex-col md:pl-14 z-20">
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="opacity-1 ml-5 herohead w-[300px] md:w-[450px] leading-tight  text-[30px] md:text-[50px] font-bold leading-[47px]">Your Victory is our <span class="text-transparent bg- bg-gradient-to-r from-amber-600 to-orange-700 bg-clip-text">Success</span></h1>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="font-[inter] opacity-1 w-[220px] text-[13px] ml-5 mb-5 md:w-[300px] md:text-[16px] font-medium text-slate-800">Discovering Innovations with Digital intelligence and creativity"<h1/>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="opacity-1 flex space-x-3 mt-1 ml-5"><button class="md:py-3 md:px-10 bg-gradient-to-r from-orange-700 to-orange-500 text-sm md:rounded-2xl font-medium text-white px-6 py-2.5 rounded-xl hover:from-orange-500 hover:to-orange-700 shadow-lg">Explore</button><button class="font-medium bg-white ring-1 ring-slate-200 shadow-lg md:rounded-2xl md:py-3 md:px-7 px-4 py-1 rounded-xl text-sm">Contact Us</button></div>
             </div>
             <div class="right">
                 <div class="">
@@ -245,7 +250,7 @@ id="btn-back-to-top">
     <!--onlyforphone-->
     <div class="md:hidden w-full h-[55px] bg-gradient-to-b from-slate-100 to-amber-100 ring-1 ring-slate-200"></div>
     <!--features-->
-    <div class="flex justify-center">
+    <div data-aos="fade-up" data-aos-duration="1100" class="flex justify-center">
     <section class="md:h-[500px] max-md:mt-[95px] flex justify-center items-center justify-around max-md:flex-col font-[inter]">
         <div class="py-12 px-20 rounded-md flex flex-col gap-2 items-center">
             <svg class="size-10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0,0,255.98958,255.98958"><g fill="#920000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12.33008,2.00586c-0.28435,-0.01161 -0.57203,-0.00709 -0.86328,0.01172c-4.01512,0.26062 -7.10172,3.59259 -7.43359,7.55078l-0.01367,-0.01758l-0.8418,10.28711c-0.095,1.165 0.82514,2.16211 1.99414,2.16211h8.82813c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1h-2c-3.314,0 -6,-2.686 -6,-6v-1c0,-1.105 0.895,-2 2,-2h8c1.105,0 2,0.895 2,2v3h-4.08789c-0.21163,-0.59859 -0.77721,-0.99911 -1.41211,-1c-0.82843,0 -1.5,0.67157 -1.5,1.5c0.00105,0.78597 0.60862,1.43785 1.39258,1.49414c0.03568,0.00388 0.07154,0.00583 0.10742,0.00586h6.5h1c1.1,0 2,-0.9 2,-2v-2c0,-1.1 -0.9,-2 -2,-2v-2c0,-4.30781 -3.4047,-7.82004 -7.66992,-7.99414z"></path></g></g></svg>
@@ -257,7 +262,7 @@ id="btn-back-to-top">
             <h3 class="font-bold text-center">Premium Service</h3>
             <p class="w-[290px] text-center font-medium text-slate-500 text-[13px]">We are here for anytime, day or night. Our dedicated team is available for 24/7 to help with any questions or issues, ensureing you get the support you need, whenever you need it. Your Satisfaction is our Priority!</p>
         </div>
-        <div class="py-12 px-20 rounded-md flex flex-col gap-2 items-center">
+        <div data-aos="fade-up" data-aos-duration="1100" class="py-12 px-20 rounded-md flex flex-col gap-2 items-center mb-10">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0,0,255.98958,255.98958"><g fill="#920000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M43.367,22c-1.026,0 -2.152,0.675 -4.546,1.917c-1.983,1.03 -3.817,2.009 -4.982,2.723c0.101,0.438 0.161,0.892 0.161,1.36c0,3.309 -2.692,6 -6,6h-7.5c-0.828,0 -1.5,-0.671 -1.5,-1.5c0,-0.829 0.672,-1.5 1.5,-1.5h7.5c1.654,0 3,-1.346 3,-3c0,-0.897 -0.404,-1.694 -1.03,-2.245c-0.711,-0.47 -1.555,-0.755 -2.47,-0.755h-4.393h-0.607c-0.029,0 -0.056,-0.007 -0.085,-0.009c-2.636,-0.041 -3.902,-0.313 -5.015,-0.558c-1.012,-0.223 -1.968,-0.433 -3.573,-0.433c-7.332,0 -11.518,9.001 -11.692,9.384c-0.226,0.496 -0.165,1.074 0.158,1.512l7,9.494c0.285,0.387 0.734,0.605 1.204,0.605c0.095,0 0.189,-0.009 0.284,-0.027c0.566,-0.108 1.024,-0.536 1.171,-1.093c0.079,-0.295 0.843,-2.875 3.548,-2.875c1.952,0 3.971,0.252 5.924,0.495c1.989,0.249 4.047,0.505 6.076,0.505c2.763,0 4.752,-2.119 10.5,-8c7.302,-7.471 8,-8.124 8,-9.605c0,-1.282 -1.125,-2.395 -2.633,-2.395M34.687,13.64c-0.359,-0.269 -0.57,-0.692 -0.57,-1.14c0,-0.448 0.211,-0.871 0.57,-1.14l0.613,-0.46c0.307,-0.23 0.459,-0.627 0.355,-0.996c-0.436,-1.533 -1.249,-2.905 -2.331,-4.016c-0.267,-0.275 -0.686,-0.341 -1.038,-0.19l-0.696,0.297c-0.413,0.176 -0.884,0.148 -1.273,-0.076c-0.388,-0.224 -0.649,-0.618 -0.702,-1.064l-0.092,-0.761c-0.046,-0.38 -0.312,-0.709 -0.683,-0.803c-0.743,-0.189 -1.521,-0.291 -2.323,-0.291c-0.802,0 -1.579,0.102 -2.323,0.29c-0.372,0.094 -0.637,0.423 -0.683,0.803l-0.091,0.761c-0.054,0.445 -0.314,0.84 -0.702,1.064c-0.388,0.224 -0.86,0.253 -1.273,0.076l-0.696,-0.297c-0.352,-0.151 -0.771,-0.084 -1.038,0.19c-1.082,1.111 -1.895,2.483 -2.331,4.016c-0.105,0.369 0.047,0.766 0.355,0.996l0.613,0.46c0.359,0.269 0.57,0.692 0.57,1.14c0,0.448 -0.211,0.871 -0.57,1.14l-0.613,0.46c-0.307,0.23 -0.459,0.627 -0.355,0.996c0.436,1.533 1.249,2.905 2.331,4.016c0.267,0.275 0.686,0.341 1.038,0.19l0.696,-0.297c0.413,-0.176 0.884,-0.148 1.273,0.076c0.388,0.224 0.649,0.618 0.702,1.064l0.092,0.761c0.046,0.38 0.312,0.709 0.683,0.804c0.743,0.188 1.521,0.29 2.323,0.29c0.802,0 1.579,-0.102 2.323,-0.29c0.372,-0.094 0.637,-0.423 0.683,-0.804l0.092,-0.761c0.054,-0.445 0.314,-0.84 0.702,-1.064c0.388,-0.224 0.86,-0.253 1.273,-0.076l0.696,0.297c0.352,0.151 0.771,0.084 1.038,-0.19c1.082,-1.111 1.895,-2.483 2.331,-4.016c0.105,-0.369 -0.047,-0.766 -0.355,-0.996zM26.517,15c-1.381,0 -2.5,-1.119 -2.5,-2.5c0,-1.381 1.119,-2.5 2.5,-2.5c1.381,0 2.5,1.119 2.5,2.5c0,1.381 -1.119,2.5 -2.5,2.5z"></path></g></g></svg>
             <h3 class="font-bold text-center">Custom Solutions</h3>
             <p class="w-[290px] text-center font-medium text-slate-500 text-[13px]">We are here for anytime, day or night. Our dedicated team is available for 24/7 to help with any questions or issues, ensureing you get the support you need, whenever you need it. Your Satisfaction is our Priority!</p>
@@ -275,25 +280,25 @@ id="btn-back-to-top">
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Implementing AI in all arenas.</h2>
-        <p class="mt-6 leading-8 text-gray-300 text-[16px] leading-[24px]">"From initial concept to final completion, your success story is our proudest and most valued achievement."</p>
+        <h2 data-aos="fade-up" data-aos-duration="1300" class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Implementing AI in all arenas.</h2>
+        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300" class="mt-6 leading-8 text-gray-300 text-[16px] leading-[24px]">"From initial concept to final completion, your success story is our proudest and most valued achievement."</p>
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-          <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
-          <a href="blogs.html">Our Blogs<span aria-hidden="true">&rarr;</span></a>
-          <a href="#">Self Motivated Teams <span aria-hidden="true">&rarr;</span></a>
+        <div data-aos="fade-right" data-aos-duration="1300" data-aos-delay="400" class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#bg">Internship program <span aria-hidden="true">&rarr;</span></a>
+          <a href="#bg">Our Blogs<span aria-hidden="true">&rarr;</span></a>
+          <a href="#teams">Self Motivated Teams <span aria-hidden="true">&rarr;</span></a>
         </div>
         <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="flex flex-col-reverse gap-1">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="420" class="flex flex-col-reverse gap-1">
             <dt class="text-base leading-7 text-gray-300">Clients</dt>
             <dd class="text-5xl font-bold leading-9 tracking-tight text-white">5<span class="text-[20px]">+</span></dd>
           </div>
-          <div class="flex flex-col-reverse">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="440" class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-300">Projects</dt>
             <dd class="text-5xl font-bold leading-9 tracking-tight text-white">10<span class="text-[20px]">+</span></dd>
           </div>
-          <div class="flex flex-col-reverse">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="460" class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-300">Experience</dt>
             <dd class="text-5xl font-bold leading-9 tracking-tight text-white">1<span class="text-[20px]">yr+</span></dd>
           </div>
@@ -303,16 +308,16 @@ id="btn-back-to-top">
   </div>
   
 <!--mission and vision-->
-<section>
-<div class="font-[jost] animation-loop-scroll w-full h-[96px] flex justify-center items-center">
+<section class="md:mt-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="font-[jost] animation-loop-scroll w-full h-[96px] flex justify-center items-center">
     <h1 class="py-2 font-bold text-2xl md:text-5xl mt-10">Mission & <span class="text-transparent bg-gradient-to-r from-orange-500 to-amber-700 bg-clip-text border-b border-b-4 border-b-amber-600 py-2">Vision</span></h1>
 </div>
 <section>
-  <div class="gap-16 items-center py-8 px-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6" >
+  <div data-aos="fade-up" data-aos-duration="1000" class="gap-16 items-center py-8 px-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6" >
       <div class="font-light text-gray-600 sm:text-lg  font-[k2d]">
           <h2 class="font-[inter] mb-4 text-[30px] md:text-[40px]  tracking-tight leading-none font-extrabold text-gray-900 max-md:text-center">We didn't reinvent the wheel</h2>
-          <p class="font-[inter] mb-4 font-medium leading-5 text-[12px] max-md:text-[8px] max-md:text-center max-md:leading-3">Become a leading technology solutions provider known for excellence in digital innovation and a customer-centric approach. Empower businesses globally by transforming their digital presence and ensuring they stay ahead in the evolving technological landscape.Become a leading technology solutions provider known for excellence in digital innovation and a customer-centric approach.</p>
-          <p class="font-[inter] font-medium text-[12px] leading-5 max-md:text-[8px] max-md:text-center max-md:leading-3">Our mission is to Delivering innovative and reliable digital solutions to enhance user experiences and drive business success. We focus on top-notch testing, website and app development, UI/UX design, and multimedia services with an emphasis on quality, creativity, and client satisfaction.</p>
+          <p class="font-[inter] mb-4 font-medium leading-5 text-[12px] max-md:text-[10px] max-md:text-center max-md:leading-4">Become a leading technology solutions provider known for excellence in digital innovation and a customer-centric approach. Empower businesses globally by transforming their digital presence and ensuring they stay ahead in the evolving technological landscape.Become a leading technology solutions provider known for excellence in digital innovation and a customer-centric approach.</p>
+          <p class="font-[inter] font-medium text-[12px] leading-5 max-md:text-[10px] max-md:text-center max-md:leading-4">Our mission is to Delivering innovative and reliable digital solutions to enhance user experiences and drive business success. We focus on top-notch testing, website and app development, UI/UX design, and multimedia services with an emphasis on quality, creativity, and client satisfaction.</p>
           <div class="flex items-center max-md:justify-center space-x-3"><button class="max-md:py-2 mt-5 py-1 px-5 bg-gradient-to-r from-orange-700 to-orange-500 text-white rounded-xl font-medium text-[10px]">Visit Blogs</button>
             <button class="max-md:py-2 mt-5 py-1 px-5 bg-gradient-to-r ring-1 ring-slate-300 shadow-lg bg-white text-black rounded-xl font-medium text-[10px]">Know More</button></div>
       </div>
@@ -323,10 +328,10 @@ id="btn-back-to-top">
   </div>
 </section>
 <!--what we do-->
-<div id="wwd" class="flex justify-center">
+<div data-aos="fade-up" data-aos-duration="1000" id="wwd" class="flex justify-center">
 <section class="max-w-[1333px]">
 <div class="font-[jost] animation-loop-scroll w-full h-[150px] flex flex-col text-center space-y-4 justify-center items-center px-5">
-  <h1 class="py-2 font-bold text-3xl">What We <span class="text-transparent bg-gradient-to-r from-orange-500 to-amber-700 bg-clip-text border-b border-b-4 border-b-amber-600 py-2">Do!</span></h1>
+  <h1 class="py-2 font-bold text-2xl md:text-4xl">What We <span class="text-transparent bg-gradient-to-r from-orange-500 to-amber-700 bg-clip-text border-b border-b-4 border-b-amber-600 py-2">Do!</span></h1>
   <p class="md:w-[1000px] text-[12px] text-slate-800">We focus on customizing solutions to fit our clients' specific needs. Whether it's developing software, improving automation, or creating engaging multimedia, we help businesses succeed in today's digital landscape</p>
 </div>
   <div class="mx-20 mt-10">
@@ -484,7 +489,7 @@ id="btn-back-to-top">
   </div>
   <!--mobile wwd-->
   <div class="font-[inter] flex flex-col gap-4 md:hidden w-full items-center justify-center mb-10">
-    <div class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-right" data-aos-duration="1000" class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-slate-200 rounded-full overflow-hidden shadow-md">
         <img src="Assets/Laptop Settings.png" alt="pearlsettingsforservices" class="size-5">
       </div>         
@@ -492,7 +497,7 @@ id="btn-back-to-top">
       <p class="font-medium text-slate-700 text-sm max-md:text-[8px] leading-3">We build custom software solutions tailored to streamline your business processes. Our focus is on delivering scalable and efficient software that helps you achieve your operational goals.</p>
       <button class="bg-gradient-to-r from-amber-500 to-orange-500 text-[9px] text-white px-5 py-2 rounded-xl font-medium">Contact Now</button>
     </div>
-    <div class="bg-gradient-to-l from-amber-400 via-orange-500 to-red-600  rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="bg-gradient-to-l from-amber-400 via-orange-500 to-red-600  rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-white rounded-full overflow-hidden shadow-md">
         <img src="Assets/Code.png" alt="pearlcodeforservices" class="size-5">
       </div>  
@@ -501,7 +506,7 @@ id="btn-back-to-top">
       <button class="bg-white text-[9px] text-black px-5 py-2 rounded-xl font-medium">Contact Now</button>
 
     </div>
-    <div class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="520"  class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-slate-200 rounded-full overflow-hidden shadow-md">
         <img src="Assets/Portraits.png" alt="pearlpotraitsforservices" class="size-5">
       </div>  
@@ -509,7 +514,7 @@ id="btn-back-to-top">
       <p class="font-medium text-slate-700 text-sm max-md:text-[8px] leading-3">We build custom software solutions tailored to streamline your business processes. Our focus is on delivering scalable and efficient software that helps you achieve your operational goals.</p>
       <button class="bg-gradient-to-r from-amber-500 to-orange-500 text-[9px] text-white px-5 py-2 rounded-xl font-medium">Contact Now</button>
     </div>
-    <div class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="540" class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-slate-200 rounded-full overflow-hidden shadow-md">
         <img src="Assets/CD Collection.png" alt="pearlcdrateforservices" class="size-5">
       </div>  
@@ -517,7 +522,7 @@ id="btn-back-to-top">
       <p class="font-medium text-slate-700 text-sm max-md:text-[8px] leading-3">We build custom software solutions tailored to streamline your business processes. Our focus is on delivering scalable and efficient software that helps you achieve your operational goals.</p>
       <button class="bg-gradient-to-r from-amber-500 to-orange-500 text-[9px] text-white px-5 py-2 rounded-xl font-medium">Contact Now</button>
     </div>
-    <div class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="560" class="bg-white rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-slate-200 rounded-full overflow-hidden shadow-md">
         <img src="Assets/Services.png" alt="pearlservforservices" class="size-5">
       </div>  
@@ -526,7 +531,7 @@ id="btn-back-to-top">
       <button class="bg-gradient-to-r from-amber-500 to-orange-500 text-[9px] text-white px-5 py-2 rounded-xl font-medium">Contact Now</button>
 
     </div>
-    <div class="bg-gradient-to-l from-amber-400 via-orange-500 to-red-600 rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="580" class="bg-gradient-to-l from-amber-400 via-orange-500 to-red-600 rounded-md px-10 py-14 w-[74%] h-[300px] space-y-4 shadow-lg">
       <div class="w-[50px] h-[50px] flex justify-center items-center bg-slate-200 rounded-full overflow-hidden">
         <img src="Assets/Frame Rate.png" alt="pearlframerateforservices" class="size-5">
       </div>  
@@ -554,36 +559,36 @@ id="btn-back-to-top">
             <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div class="container mx-auto w-full h-full">
                 <div class="relative wrap overflow-hidden p-10 h-full">
-                  <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  <div data-aos="fade-up" data-aos-duration="1500" class="border-2-2 border-yellow-555 absolute h-full border"
                     style="right: 50%; border: 2px solid #fded00; border-radius: 4%; box-shadow: 1px 1px 10px 3px rgb(255, 176, 30);"></div>
-                  <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  <div data-aos="fade-up" data-aos-duration="1500" class="border-2-2 border-yellow-555 absolute h-full border"
                     style="left: 50%; border: 2px solid #fffb00; border-radius: 1%;"></div>
                   <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div class="order-1 w-5/12"></div>
-                    <div class="order-1 w-5/12 px-1 py-4 text-right">
-                      <p class="text-[34px] mb-3 text-yellow-300 text-xl font-extrabold">1.</p>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="order-1 w-5/12 px-1 py-4 text-right">
+                      <p class="text-[30px] mb-3 text-yellow-300 font-extrabold">1.</p>
                       <h4 class="mb-3 font-bold text-lg md:text-2xl">Creative Team</h4>
-                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100  max-md:text-[10px]">
                         From designers to developers, we're united in our dedication to deliver innovative solutions.
                       </p>
                     </div>
                   </div>
                   <div class="mb-8 flex justify-between items-center w-full right-timeline">
                     <div class="order-1 w-5/12"></div>
-                    <div class="order-1  w-5/12 px-1 py-4 text-left">
-                      <p class="mb-3 text-base text-yellow-300 text-[35px] font-extrabold">2.</p>
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="order-1  w-5/12 px-1 py-4 text-left">
+                      <p class="mb-3 text-yellow-300 text-[30px] font-extrabold">2.</p>
                       <h4 class="mb-3 font-bold text-lg md:text-2xl">Value for money</h4>
-                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100  max-md:text-[10px]">
                         We offer affordable prices without compromising on quality. With us, you can trust that you're getting <code class="text-red-500">The Best</code>
                       </p>
                     </div>
                   </div>
                   <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div class="order-1 w-5/12"></div>
-                    <div class="order-1 w-5/12 px-1 py-4 text-right">
-                      <p class="mb-3 text-base text-yellow-300  text-[34px] font-extrabold">3.</p>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="order-1 w-5/12 px-1 py-4 text-right">
+                      <p class="mb-3 text-yellow-300  text-[30px] font-extrabold">3.</p>
                       <h4 class="mb-3 font-bold text-lg md:text-2xl">Timely Delivery</h4>
-                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100  max-md:text-[10px]">
                         We make sure your project is delivered promptly , so you can focus on what matters most.
                       </p>
                     </div>
@@ -592,10 +597,10 @@ id="btn-back-to-top">
                   <div class="mb-8 flex justify-between items-center w-full right-timeline">
                     <div class="order-1 w-5/12"></div>
       
-                    <div class="order-1  w-5/12 px-1 py-4">
-                      <p class="mb-3 text-base text-yellow-300 text-[35px] font-extrabold">4.</p>
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="order-1  w-5/12 px-1 py-4">
+                      <p class="mb-3 text-yellow-300 text-[30px] font-extrabold">4.</p>
                       <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">Quality Assurance</h4>
-                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 max-md:text-[10px]">
                         Quality is at the forefront of everything we do. We understand that delivering a flawless is critical to our clients success. 
                       </p>
                     </div>
@@ -615,7 +620,7 @@ id="btn-back-to-top">
   <section class="">
     <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div class="max-w-lg max-md:flex max-md:flex-col max-md:items-center max-md justify-center mx-5">
+            <div data-aos="fade-up" data-aos-duration="1000" class="max-w-lg max-md:flex max-md:flex-col max-md:items-center max-md justify-center mx-5">
                 <h2 class="font-[jost] text-3xl font-extrabold text-gray-900 sm:text-4xl">About <span class="text-transparent bg-gradient-to-r from-orange-500 to-amber-700 bg-clip-text">Us!</span></h2>
                 <p class="font-[inter] mt-4 max-md:text-center text-gray-600 text-sm">We pride ourselves on being a professional and innovative company dedicated to delivering exceptional results. Our team of experts combines creativity and cutting-edge technology to transform ideas into impactful solutions. We are committed to excellence, integrity, and the highest standards of quality in everything we do.</p>
                 <button class="text-sm py-2 px-8 mt-6 bg-gradient-to-r from-red-500 to-orange-500 text-white font-medium rounded-xl">Contact Us</button>
@@ -628,15 +633,15 @@ id="btn-back-to-top">
 </section>
 </section>
 
-<section>
+<section id="bg">
   <section class="font-[inter] bg-[url(https://images.unsplash.com/photo-1708457753320-02e52a276a80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-fixed">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-            <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Our Blog</h2>
-            <p class="font-light text-gray-50 sm:text-xl ">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+            <h2 data-aos="zoom-in" data-aos-duration="1000" class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Our Blog</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000" class="font-light text-gray-50 sm:text-xl ">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
         </div> 
         <div class="grid gap-8 lg:grid-cols-2">
-            <article class="p-6 bg-black backdrop-blur-md rounded-lg shadow-xl mx-2">
+            <article data-aos="flip-down" data-aos-duration="1500" class="p-6 bg-black backdrop-blur-md rounded-lg shadow-xl mx-2">
                 <div class="flex justify-between items-center mb-5 text-gray-500">
                     
                     <span class="text-sm text-green-500">Recent</span>
@@ -656,7 +661,7 @@ id="btn-back-to-top">
                     </a>
                 </div>
             </article> 
-            <article class="p-6 bg-black rounded-lg border border-gray-900 backdrop-blur-lg">
+            <article data-aos="flip-down" data-aos-duration="1500" class="p-6 bg-black rounded-lg">
                 <div class="flex justify-between items-center mb-5 text-gray-500">
                     <span class="bg-primary-100 text-green-600 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                         <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
@@ -664,7 +669,7 @@ id="btn-back-to-top">
                     </span>
                     <span class="text-sm"></span>
                 </div>
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Face Recognized Door Lock</a></h2>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-white"><a href="#">Face Recognized Door Lock</a></h2>
                 <p class="mb-5 font-light text-gray-500 dark:text-gray-400">"We are developing a face recognition door lock using deep learning. This innovative system enhances security by allowing access only to recognized faces, combining advanced algorithms with real-time processing for a seamless and secure entry experience.</p>
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-4">
@@ -686,14 +691,14 @@ id="btn-back-to-top">
 
 
 <!--team-->
-<section>
+<section id="teams">
   <!-- ====== Team Section Start -->
 <section class="font-[inter] pt-20 pb-10 lg:pt-[120px] lg:pb-20 dark:bg-dark">
   <div class="container mx-auto">
      <div class="-mx-4 flex flex-wrap">
-        <div class="w-full px-4">
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full px-4">
            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span class="text-amber-500 mb-2 block text-lg font-semibold">
+              <span class="text-amber-600 mb-2 block text-lg font-semibold">
                 Passionate. Proactive. Productive.
               </span>
               <h2
@@ -707,7 +712,7 @@ id="btn-back-to-top">
            </div>
         </div>
      </div>
-     <div class="flex font-[inter] md:gap-52 gap-[55px] items-center justify-center max-md:flex-col">
+     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450" class="flex font-[inter] md:gap-52 gap-[55px] items-center justify-center max-md:flex-col">
       <div class="flex flex-col gap-3
        items-center justify-center rounded-lg">
         <img src="Assets/Team/JM.jpg" alt="pearljohnmosesceo" class="rounded-full w-60 h-60 object-cover ring-4 ring-[#fff6ed]">
@@ -746,7 +751,7 @@ id="btn-back-to-top">
       </div>
      </div>
 
-     <div class="mt-10 max-md:mt-[55px] flex font-[inter] md:gap-52 gap-[55px] items-center justify-center max-md:flex-col">
+     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450" class="mt-10 max-md:mt-[55px] flex font-[inter] md:gap-52 gap-[55px] items-center justify-center max-md:flex-col">
       <div class="flex flex-col gap-3
        items-center justify-center rounded-lg">
         <img src="Assets/Team/KK.jpg" alt="pearlkirankumar" class="rounded-full w-52 h-52 object-center ring-4 ring-[#fff6ed]">
@@ -798,7 +803,7 @@ id="btn-back-to-top">
 <section id="git">
   <section class="font-[inter] flex justify-center items-center">
     <div class="flex justify-between p-10 max-md:flex-col max-md:gap-5">
-      <div class="flex flex-col space-y-4 max-md:items-center">
+      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="450" class="flex flex-col space-y-4 max-md:items-center">
         <h1 class="text-[35px] font-bold max-md:text-center">Contact <span class="text-amber-600">Us</span></h1>
         <p class="md:w-[70%] w-52 max-md:text-[10px] max-md:text-center">Email, Call or complete the form to reach out to us for a solution</p>
         <div class="flex items-center gap-3">
@@ -817,7 +822,7 @@ id="btn-back-to-top">
   
       </div>
       <!--right side of get in touch-->
-      <form method="POST" action="https://api.web3forms.com/submit">
+      <form data-aos="flip-right" data-aos-duration="1500" data-aos-delay="450" method="POST" action="https://api.web3forms.com/submit">
         <div class="font-[inter] px-10 py-8 bg-white rounded-3xl shadow-xl max-md:px-10">
           <input type="hidden" name="access_key" value="d2976c08-fc08-4e2b-8697-60b2206e965d">
           <h5 class="font-bold text-3xl max-md:text-[27px] max-md:text-center">Get in Touch</h5>
@@ -1058,17 +1063,10 @@ id="btn-back-to-top">
 
 
     <script src="script.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Pearl Tech Solutions",
-        "url": "https://www.yourwebsite.com",
-        "logo": "https://www.yourwebsite.com/logo.png",
-        "sameAs": "https://www.facebook.com/yourpage"
-      }
-      </script>
-      
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

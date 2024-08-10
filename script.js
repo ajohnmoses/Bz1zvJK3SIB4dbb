@@ -1,3 +1,4 @@
+
 function dismissNotification() {
   // Hide the banner
   document.getElementById('notification').style.display = 'none';
@@ -45,4 +46,5 @@ const backToTop = () => {
 mybutton.addEventListener("click", backToTop);
 
 window.addEventListener("scroll", scrollFunction);
+
 

@@ -11,3 +11,5 @@ Implementing automation solutions to optimize workflows and increase efficiency 
 
 We specialize in creating websites that are both visually appealing and functional. Whether it's a simple landing page or a complex e-commerce platform, we ensure your online presence stands out.
 
+
+timeline ui

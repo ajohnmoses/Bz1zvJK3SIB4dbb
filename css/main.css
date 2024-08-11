@@ -823,6 +823,10 @@ html,body{
   margin-right: 1.25rem;
 }
 
+.mr-\[0\.95rem\] {
+  margin-right: 0.95rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -861,18 +865,6 @@ html,body{
 
 .mt-\[12\%\] {
   margin-top: 12%;
-}
-
-.mr-\[\] {
-  margin-right: ;
-}
-
-.mr-\[0\.\] {
-  margin-right: 0.;
-}
-
-.mr-\[0\.95rem\] {
-  margin-right: 0.95rem;
 }
 
 .block {

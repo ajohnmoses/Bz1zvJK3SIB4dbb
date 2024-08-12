@@ -2342,10 +2342,6 @@ html,body{
     font-size: 8px;
   }
 
-  .max-md\:text-\[9px\] {
-    font-size: 9px;
-  }
-
   .max-md\:leading-4 {
     line-height: 1rem;
   }

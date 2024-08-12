@@ -2316,6 +2316,14 @@ html,body{
     gap: 1.25rem;
   }
 
+  .max-md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .max-md\:bg-\[conic-gradient\(at_bottom_right\2c _var\(--tw-gradient-stops\)\)\] {
+    background-image: conic-gradient(at bottom right, var(--tw-gradient-stops));
+  }
+
   .max-md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2569,6 +2577,10 @@ html,body{
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-\[conic-gradient\(at_bottom_right\2c _var\(--tw-gradient-stops\)\)\] {
+    background-image: conic-gradient(at bottom right, var(--tw-gradient-stops));
   }
 
   .md\:px-10 {

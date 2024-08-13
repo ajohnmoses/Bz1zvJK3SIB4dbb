@@ -1,23 +1,23 @@
 const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "The Pearl Tech Solutions : Home",  // No change needed here
-    "url": "https://www.pearltechsolutions.in",  // Change to your actual website URL
-    "logo": "https://pearltechsolutions.in/Assets/Logo.png",  // Change to your actual logo URL
+    "name": "The Pearl Tech Solutions | Home", 
+    "url": "https://www.pearltechsolutions.in",  
+    "logo": "https://pearltechsolutions.in/Assets/Logo.png", 
     
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91 63793 85125",  // Change to your actual contact number
+      "telephone": "+91 63793 85125", 
       "contactType": "Customer Service",
-      "email": "thepearl.global@gmail.com"  // Change to your actual email address
+      "email": "thepearl.global@gmail.com" 
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kolathur",  // Change to your actual street address
+      "streetAddress": "Kolathur", 
       "addressLocality": "Chennai",
       "addressRegion": "Tamilnadu",
       "postalCode": "600082",
-      "addressCountry": "India"  // Change to your actual country
+      "addressCountry": "India"
     }
   };
   

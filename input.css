@@ -4,6 +4,37 @@
 
 
 @layer base{
+  /* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,orange,rgb(128, 58, 0));
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,rgb(98, 64, 0),rgb(147, 25, 0));
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+
+
+
+
+
 
     .progress-wrap {
         position: fixed;
@@ -21,7 +52,7 @@
         transform: translateY(15px);
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
-        background-color: rgb(193, 35, 0);
+        background: linear-gradient(75deg,red,orange);
       }
       
       .progress-wrap.active-progress {

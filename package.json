@@ -17,6 +17,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "jquery": "^3.7.1",
+    "tailwindcss-motion": "^0.3.0-beta",
     "vite": "^5.3.5"
   }
 }

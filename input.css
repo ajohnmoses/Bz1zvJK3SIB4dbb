@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -137,7 +138,7 @@
     background: url(Assets/mdbg.png);
 }
 .herohead{
-    font-family: "Jost";
+  font-family: "DM Sans", sans-serif;
 }
 html,body{
     width: 100vw;

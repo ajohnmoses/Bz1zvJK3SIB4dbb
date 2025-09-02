@@ -1,5 +1,5 @@
 {
-  "name": "Pearl Tech Solutions",
+  "name": "pearl-tech-solutions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,6 @@
     "aos": "^2.3.4",
     "jquery": "^3.7.1",
     "tailwindcss-motion": "^0.3.0-beta",
-    "vite": "^5.3.5"
+    "vite": "^7.1.4"
   }
 }
